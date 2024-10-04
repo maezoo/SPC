@@ -2,29 +2,104 @@ $gray: #eaeaea;
 $light-gray: #f5f5f5;
 $white: #fff;
 $sky: #3CB4E5;
+// ==================
+$font-gray: #7a7a7a;
 
 
 .footer {
     background-color: $light-gray;
     width: 100%;
     height: 490px;
+    padding: 60px 0px;
     display: flex;
     justify-content: center;
 
     .footer_wrap {
         width: 94%;
-        height: 490px;
+        height: 100%;
 
-        background-color: #3CB4E5;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
 
         .footer_top {
+
             display: flex;
             justify-content: space-between;
 
+            .logo_box {
+                font-size: 16px;
+                height: 148px;
+
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .logo {
+                    margin-bottom: 46px;
+
+                    img {
+                        width: 103px;
+                    }
+                }
+
+                .address {
+                    color: $font-gray;
+                }
+
+                .privacy {
+                    width: 398px;
+                    font-weight: 700;
+                    display: flex;
+                    flex-wrap: wrap;
+                    column-gap: 19px;
+                    row-gap: 10px;
+
+                    li::after {
+                        content: "";
+                        width: 1px;
+                        height: 10px;
+                        background-color: #a0a0a0;
+                        // display: block;
+                        position: absolute;
+                        // right: -1.1rem;
+                        // top: 50%;
+                        // transform: translateY(-50%);
+                        margin: 3px 9px 0px;
+                    }
+
+                    li:last-child::after {
+                        content: none;
+                    }
+                }
+            }
+
             .footer_menu {
                 display: flex;
+
+                gap: 77px;
+
+                .footer_lnb {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    li {
+
+                        font-size: 20px;
+
+                    }
+
+                    li:nth-child(1) {
+                        padding-bottom: 10px;
+                    }
+
+                    li:not(:nth-child(1)) {
+                        font-size: 18px;
+                        color: $font-gray;
+                    }
+                }
             }
         }
 
@@ -32,13 +107,75 @@ $sky: #3CB4E5;
             display: flex;
             justify-content: space-between;
 
-            .sns_icon {
+            .family {
+                font-size: 18px;
+                font-weight: 700;
                 display: flex;
+                flex-direction: column;
+                gap: 21px;
 
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+
+                    #select_box {
+                        border-radius: 50%;
+                        width: 40px;
+                        height: 40px;
+                        background-color: $white;
+
+                    }
+                }
+
+                >p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $font-gray;
+                }
+
+            }
+
+        }
+
+
+        .sns_icon {
+            display: flex;
+            gap: 25px;
+
+            li:nth-child(-n+3) {
                 img {
                     width: 68px;
+                    opacity: 1;
                 }
+
+                &:hover img {
+                    transition: opacity .5s ease-in-out;
+                    opacity: 0;
+                }
+            }
+
+            li:nth-child(1):hover {
+                background: url(../images/f_facebook_hover.svg) no-repeat;
+            }
+
+            li:nth-child(2):hover {
+                background: url(../images/f_instagram_hover.svg) no-repeat;
+            }
+
+            li:nth-child(3):hover {
+                background: url(../images/f_youtube_hover.svg) no-repeat;
             }
         }
     }
+
+
+
+
+
+
 }
+
+// }
