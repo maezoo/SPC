@@ -1,6 +1,6 @@
 @import "./color.scss";
 
-.header {
+header {
     width: 100%;
     height: 105px;
     background-color: salmon;
@@ -34,51 +34,112 @@
             }
         }
 
-        .gnb {
-            font-size: 24px;
-            display: flex;
-            gap: 20px;
-            background-color: rgb(122, 30, 214);
-            position: absolute;
-            top: 0;
-            left: 505px;
 
-            .gnb_list {
-                padding: 7px;
+        .gnb {
+            display: flex;
+            gap: 45px;
+
+            .lnb {
+                height: 105px;
 
                 a {
-                    height: 105px;
-                    // line-height: 3.8;
-                    // text-align: center;
-                    // display: block;
-
+                    // font-size: 24px;
                 }
 
-                .lnb {
-                    visibility: hidden;
-                    background-color: yellowgreen;
-                    font-size: 18px;
-                    font-weight: bold;
+                .lnb_list {
                     display: flex;
                     flex-direction: column;
-                    // position: relative;
+                    align-items: center;
 
-                    div {
-                        width: 120px;
-                        display: flex;
-                        justify-content: center;
-                        // position: absolute;
-                        // z-index: 9999999;
-
-                        // a {
-                        // width: 100%;
-                        //     height: 100%;
-                        //     display: block;
-                        // }
+                    li {
+                        font-size: 18px;
                     }
                 }
             }
+
         }
+
+        // .gnb {
+        //     display: flex;
+        //     // align-items: center;
+        //     // justify-content: center;
+        //     // position: absolute;
+        //     // left: 500px;
+        //     // background-color: rgb(122, 30, 214);
+        //     // top: 0;
+
+        //     .lnb {
+        //         li {
+        //             display: flex;
+        //             align-items: center;
+
+        //             >a {
+        //                 display: block;
+        //                 // height: 105px;
+        //                 // height: 100%;
+        //                 // width: 100%;
+        //                 // text-align: center;
+        //             }
+        //         }
+
+
+        //         //     line-height: 3.8;
+        //         //     padding: 7px;
+
+
+        //         .lnb_list {
+
+        //             li {
+        //             }
+        //         }
+
+        //         //  
+        //         // }
+
+        //         // li:not(:first-child) {
+        //         // }
+        //     }
+
+        //     .gnb_list {
+
+
+
+        //         // .lnb {
+        //         //     visibility: hidden;
+        //         // background-color: yellowgreen;
+        //         //     font-weight: bold;
+        //         //     display: flex;
+        //         //     flex-direction: column;
+        //         //     // position: relative;
+
+        //         //     li {
+        //         //         width: 120px;
+        //         //         display: flex;
+        //         //         justify-content: center;
+        //         //         // position: absolute;
+        //         //         // z-index: 9999999;
+
+        //         //         // a {
+        //         //         // width: 100%;
+        //         //         //     height: 100%;
+        //         //         //     display: block;
+        //         //         // }
+        //         //     }
+        //         // }
+        //     }
+        // }
+
+
+
+
+
+
+
+
+
+
+
+
 
         .user_actions {
             display: flex;
@@ -159,19 +220,65 @@
             }
         }
     }
-
-    .gnb_bg {
-        width: 100%;
-        height: 280px;
-        // background-color: $white;
-        background-color: yellow;
-        position: absolute;
-        top: 105px;
-        box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, .15);
-        visibility: hidden;
-    }
 }
 
+.gnb_bg {
+    width: 100%;
+    height: 280px;
+    // background-color: $white;
+    background-color: yellow;
+    position: absolute;
+    top: 105px;
+    box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, .15);
+    visibility: hidden;
+}
+
+
+
+// 원본 .gnb {
+//     font-size: 24px;
+//     display: flex;
+//     gap: 20px;
+//     background-color: rgb(122, 30, 214);
+//     position: absolute;
+//     top: 0;
+//     left: 505px;
+
+//     .gnb_list {
+//         padding: 7px;
+
+//         a {
+//             // line-height: 3.8;
+//             // text-align: center;
+//             // display: block;
+
+//         }
+
+//         .lnb {
+//             visibility: hidden;
+//             background-color: yellowgreen;
+//             font-size: 18px;
+//             font-weight: bold;
+//             display: flex;
+//             flex-direction: column;
+//             // position: relative;
+
+//             div {
+//                 width: 120px;
+//                 display: flex;
+//                 justify-content: center;
+//                 // position: absolute;
+//                 // z-index: 9999999;
+
+//                 // a {
+//                 // width: 100%;
+//                 //     height: 100%;
+//                 //     display: block;
+//                 // }
+//             }
+//         }
+//     }
+// }
 
 
 // .header_inner .lang_wrap li a {

@@ -1,0 +1,61 @@
+@import "./color.scss";
+
+main {
+    width: 100%;
+    // height: 100%;
+    background-color: black;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+
+    .main_wrap {
+        width: 90%;
+        background-color: rebeccapurple;
+        // display: grid;
+        // grid-template-rows: 1fr 1fr 1fr;
+        // grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+.happy_slide {
+    width: 1832px;
+    position: relative;
+
+    .slick-wrapper {
+        width: 1832px;
+        height: 100%;
+
+        .slide {
+            img {
+                width: 1832px;
+                height: 440px;
+            }
+        }
+    }
+
+    .title_box {
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // width: fit-content;
+        // height: fit-content;
+
+        h1 {
+            font-size: 106px;
+            font-family: 'Pretendard';
+            font-weight: 800;
+        }
+
+        h4 {
+            font-size: 54px;
+            font-weight: 700;
+        }
+    }
+
+}
