@@ -1,5 +1,10 @@
 @import "./color.scss";
 
+.fl_col {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     background-color: $light-gray;
     width: 100%;
@@ -11,22 +16,18 @@ footer {
     .footer_wrap {
         width: 94%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
+        @extend.fl_col;
+
 
         .footer_top {
-
             display: flex;
             justify-content: space-between;
 
             .logo_box {
                 font-size: 16px;
                 height: 148px;
-
-
-                display: flex;
-                flex-direction: column;
+                @extend.fl_col;
                 gap: 10px;
 
                 .logo {
@@ -56,10 +57,6 @@ footer {
                         background-color: #a0a0a0;
                         position: absolute;
                         margin: 3px 9px 0px;
-                        // display: block;
-                        // right: -1.1rem;
-                        // top: 50%;
-                        // transform: translateY(-50%);
                     }
 
                     li:last-child::after {
@@ -70,18 +67,14 @@ footer {
 
             .footer_menu {
                 display: flex;
-
                 gap: 77px;
 
                 .footer_lnb {
-                    display: flex;
-                    flex-direction: column;
+                    @extend.fl_col;
                     gap: 20px;
 
                     li {
-
                         font-size: 20px;
-
                     }
 
                     li:nth-child(1) {
@@ -103,8 +96,7 @@ footer {
             .family {
                 font-size: 18px;
                 font-weight: 700;
-                display: flex;
-                flex-direction: column;
+                @extend.fl_col;
                 gap: 21px;
 
                 .fam_box {
@@ -119,26 +111,32 @@ footer {
                         height: 40px;
                         position: relative;
 
-                        span {
-                            background: black;
-                            position: absolute;
-                        }
+                        a {
+                            display: block;
+                            height: 100%;
 
-                        .hori_rod {
-                            width: 15px;
-                            height: 2px;
-                            top: 50%;
-                            left: 32%;
-                        }
+                            span {
+                                background: black;
+                                position: absolute;
+                            }
 
-                        .ver_rod {
-                            width: 2px;
-                            height: 15px;
-                            top: 32%;
-                            left: 48%;
+                            .hori_rod {
+                                width: 15px;
+                                height: 3px;
+                                top: 48%;
+                                left: 33%;
+                            }
+
+                            .ver_rod {
+                                width: 3px;
+                                height: 15px;
+                                top: 32%;
+                                left: 48%;
+                            }
                         }
 
                         .select_wrap {
+                            visibility: hidden;
                             position: absolute;
                             bottom: 47px;
                             width: 225px;
@@ -146,7 +144,6 @@ footer {
                             background-color: white;
                             border: solid 1px #e9e9e9;
                             border-radius: 10px;
-
                             display: flex;
                             align-items: center;
 
@@ -175,6 +172,10 @@ footer {
                                 height: 40px;
                                 border-radius: 10px;
                             }
+                        }
+
+                        .select_wrap.show {
+                            visibility: visible;
                         }
                     }
                 }

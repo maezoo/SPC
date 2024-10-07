@@ -1,28 +1,16 @@
 // ===========================
 //푸터 패밀리 =========
-const pop_btn = document.querySelector('.top_zone_btn');
-const pop = document.querySelector('.top_pop_up');
-const btnSpan = pop_btn.querySelector('span');
-const zoneDown = document.querySelector('.down_zone');
-const popupHeight = 226;
+const plusBtn = document.querySelector('.select');
+const selectBox = document.querySelector('.select_wrap');
+const verticalStick = document.querySelector('.ver_rod');
 
-function top_Popup() {
-    pop_btn.addEventListener('click', function () {
-        pop.classList.toggle('show');
+function familySite() {
+    plusBtn.addEventListener('click', function () {
+        // selectBox의 'show' 클래스 토글
+        const stickVisible = selectBox.classList.toggle('show'); // show 클래스를 토글하고 그 결과를 isVisible에 저장
 
-        if (pop.classList.contains('show')) {
-            btnSpan.textContent = '팝업존 닫기'; moveDown();
-        } else {
-            btnSpan.textContent = '팝업존 열기'; moveUp();
-        }
+        // isVisible이 true일 경우 verticalStick 숨기기, false일 경우 보이기
+        verticalStick.style.display = stickVisible ? 'none' : 'block';
     });
 }
-function moveDown() {
-    zoneDown.style.marginTop = `${popupHeight}px`;
-}
-
-function moveUp() {
-    zoneDown.style.marginTop = '';
-}
-
-top_Popup();
+familySite();
