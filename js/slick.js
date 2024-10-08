@@ -1,6 +1,7 @@
 
 $(function () {
     $('.slick-wrapper').slick({
+        arrows: true,
         dots: false,
         infinite: true,
         speed: 500,
