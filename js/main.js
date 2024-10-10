@@ -1,4 +1,71 @@
 // =================
+// row2 =========
+const eatBtn = document.querySelector('.sl_eat');
+const drinkBtn = document.querySelector('.sl_drink');
+const enjoyBtn = document.querySelector('.sl_enjoy');
+
+const img_eat = document.querySelector('.eatImage');
+const img_drink = document.querySelector('.drinkImage');
+const img_enjoy = document.querySelector('.enjoyImage');
+
+const eatSlide = document.querySelector('.br_01');
+const drinkSlide = document.querySelector('.br_02');
+const enjoySlide = document.querySelector('.br_03');
+
+// =========================================================================
+function hideAllImages() {
+    img_eat.classList.remove('show');
+    img_drink.classList.remove('show');
+    img_enjoy.classList.remove('show');
+}
+function hideAllTexts() {
+    eatBtn.classList.remove('active');
+    drinkBtn.classList.remove('active');
+    enjoyBtn.classList.remove('active');
+}
+function hideAllSlides() {
+    eatSlide.classList.remove('move');
+    drinkSlide.classList.remove('move');
+    enjoySlide.classList.remove('move');
+}
+// =========================================================================
+window.addEventListener('load', function () {
+    img_eat.classList.add('show');
+    eatBtn.classList.add('active');
+    eatSlide.classList.remove('move');
+});
+
+eatBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+    img_eat.classList.add('show');
+    eatBtn.classList.add('active');
+    eatSlide.classList.add('move');
+});
+
+drinkBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+
+    img_drink.classList.add('show');
+    drinkBtn.classList.add('active');
+    drinkSlide.classList.add('move');
+});
+
+enjoyBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+
+    img_enjoy.classList.add('show');
+    enjoyBtn.classList.add('active');
+    enjoySlide.classList.add('move');
+});
+
+
+// =================
 //푸터 패밀리 =========
 const plusBtn = document.querySelector('.select');
 const selectBox = document.querySelector('.select_wrap');
@@ -11,3 +78,4 @@ function familySite() {
     });
 }
 familySite();
+
