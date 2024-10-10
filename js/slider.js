@@ -16,12 +16,14 @@
 
 var swiper = new Swiper(".mySwiper", {
     keyboard: true,
+    effect: "fade",
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
     },
-    // navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    // },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
 });
