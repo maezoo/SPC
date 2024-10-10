@@ -189,10 +189,15 @@ main {
             }
 
             .mySwiper {
-                height: 880px;
                 width: 880px;
+                height: 880px;
+                background-color: rgb(255, 253, 141);
 
                 .swiper-wrapper {
+                    width: 880px;
+                    height: 880px;
+                    background-color: tomato;
+
 
                     .swiper-slide {
                         display: grid;
@@ -258,4 +263,122 @@ main {
         }
     }
 
+}
+
+.mySwiper-1 {
+    width: 95%;
+    height: 226px;
+
+    .swiper-wrapper {
+        margin: 0 auto;
+        // background-color: #2c98e8;
+        width: 1280px;
+        overflow: hidden;
+
+        .swiper-slide {
+            padding: 8px 0 0 0;
+
+            img {
+                width: 1260px;
+                height: 180px;
+                border-radius: 14px;
+            }
+        }
+    }
+
+    .today_stop_btn {
+        position: absolute;
+        text-shadow: 1px 1px 1px #fff;
+        color: #666;
+        font-size: 13px;
+        top: 15px;
+        right: 78px;
+        z-index: 9;
+
+        .popup_close {
+            border: none;
+            font-size: 12px;
+            background: #fff;
+            color: #767676;
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            padding: 3px 8px;
+            border-radius: 3px 3px;
+            cursor: pointer;
+        }
+    }
+
+    .swiper-button-next {
+        background: url(../images/pop_up_arrow_right.png) no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-prev {
+        background: url(../images/pop_up_arrow_left.png) no-repeat;
+        width: 30px;
+        height: 30px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        display: none;
+    }
+
+    .swiper-pagination {
+        position: absolute;
+        bottom: 13px;
+
+        .swiper-pagination-bullet {
+            background: rgb(255, 255, 255);
+            border: solid rgba(0, 0, 0, 0.1);
+            opacity: 1;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #f0551c;
+        }
+    }
+}
+
+
+.today_stop_btn {
+    position: absolute;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    font-size: 13px;
+    top: 15px;
+    right: 78px;
+    z-index: 9;
+
+    .popup_close {
+        border: none;
+        font-size: 12px;
+        background: #fff;
+        color: #767676;
+        border: 1px solid rgba(0, 0, 0, 0.10);
+        padding: 3px 8px;
+        border-radius: 3px 3px;
+        cursor: pointer;
+    }
+}
+
+.swiper-button-next {
+    background: url(../images/pop_up_arrow_right.png) no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.swiper-button-prev {
+    background: url(../images/pop_up_arrow_left.png) no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    // display: none;
 }
