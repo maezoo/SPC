@@ -246,7 +246,7 @@ main {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
-                                padding-top: 135px;
+                                padding-top: 130px;
                                 gap: 5px;
 
                                 h3 {
@@ -287,14 +287,14 @@ main {
                     height: 45px;
                     position: absolute;
                     top: 29%;
-                    left: 15%;
+                    left: 15.8%;
                     font-size: 18px;
                     font-weight: 500;
                     z-index: 99;
                     border-radius: 30px;
                     padding: 15px;
 
-                    .swiper-pagination-current {}
+                    // .swiper-pagination-current {}
                 }
             }
         }
@@ -304,29 +304,33 @@ main {
 
 .swiper-button-next,
 .swiper-button-prev {
+
     position: absolute;
-    top: 280px;
+    top: 290px;
     z-index: 999;
 }
 
 .swiper-button-next {
     background: url(../images/slide_next.svg) no-repeat;
-    // width: 20px;
-    // height: 100px;
+    width: 21px;
+    height: 21px;
     background-size: contain;
-    left: 100px;
+    left: 256px;
+
 }
 
 .swiper-button-prev {
     background: url(../images/slide_prev.svg) no-repeat;
-    // width: 20px;
-    // height: 100px;
-    left: 120px;
+    width: 21px;
+    height: 21px;
+    background-size: contain;
+    left: 166px;
 }
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
     display: none;
+
 }
 
 // .swiper-pagination {
