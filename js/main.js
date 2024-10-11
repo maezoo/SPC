@@ -96,9 +96,74 @@ enjoyBtn.addEventListener('click', function () {
 
 
 
+// spc_now  ==============================
+
+
+const newsBtn = document.querySelector('.sl_news');
+const magazineBtn = document.querySelector('.sl_magazine');
+const snsBtn = document.querySelector('.sl_sns');
+
+const newsSlide = document.querySelector('.now_01');
+const magazineSlide = document.querySelector('.now_02');
+const snsSlide = document.querySelector('.now_03');
 
 
 
+function hideAllImages() {
+    newsSlide.classList.remove('show');
+    magazineSlide.classList.remove('show');
+    snsSlide.classList.remove('show');
+}
+
+// function hideAllTexts() {
+//     newsBtn.classList.remove('active');
+//     magazineBtn.classList.remove('active');
+//     snsBtn.classList.remove('active');
+// }
+
+function hideAllSlides() {
+    newsSlide.classList.remove('move');
+    magazineSlide.classList.remove('move');
+    snsSlide.classList.remove('move');
+}
+
+
+// ============
+window.addEventListener('load', function () {
+    newsSlide.classList.add('show'); // 처음에 newsSlide 보여주기
+    newsBtn.classList.add('active');
+    newsSlide.classList.remove('move');
+});
+
+// newsBtn 클릭 이벤트
+newsBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+    newsSlide.classList.add('show');
+    newsBtn.classList.add('active');
+    newsSlide.classList.add('move');
+});
+
+// magazineBtn 클릭 이벤트
+magazineBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+    magazineSlide.classList.add('show');
+    magazineBtn.classList.add('active');
+    magazineSlide.classList.add('move');
+});
+
+// snsBtn 클릭 이벤트
+snsBtn.addEventListener('click', function () {
+    hideAllImages();
+    hideAllTexts();
+    hideAllSlides();
+    snsSlide.classList.add('show');
+    snsBtn.classList.add('active');
+    snsSlide.classList.add('move');
+});
 
 
 
