@@ -28,6 +28,9 @@ var swiper = new Swiper(".mySwiper", {
     loop: true,
 });
 
+
+
+
 var swiper = new Swiper(".mySwiper_2", {
     keyboard: true,
     effect: "fade",

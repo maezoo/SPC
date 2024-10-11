@@ -106,8 +106,6 @@ main {
                 overflow: hidden;
                 grid-row: 1 / 2;
 
-                // place-items: center;
-
                 p {
                     position: absolute;
                     color: $white;
@@ -182,7 +180,7 @@ main {
                 }
             }
 
-            .brandSlide {
+            .mySwiper {
                 width: 880px;
                 height: 880px;
                 grid-row: 1/2;
@@ -197,7 +195,7 @@ main {
                         grid-template-rows: 1fr 1fr;
                         grid-template-columns: 1fr 1fr;
 
-                        div {
+                        >div {
                             position: relative;
                             width: 440px;
                             height: 440px;
@@ -327,7 +325,7 @@ main {
             grid-template-rows: 2fr;
             grid-template-columns: 2fr 2fr;
 
-            .now_slide {
+            .mySwiper_2 {
                 width: 880px;
                 height: 880px;
                 grid-row: 1/2;
@@ -343,7 +341,7 @@ main {
                         grid-template-rows: 1fr 1fr;
                         grid-template-columns: 1fr 1fr;
 
-                        div {
+                        >div {
                             // position: relative;
                             width: 440px;
                             height: 440px;
@@ -413,7 +411,7 @@ main {
                 .swiper-button-prev {
                     position: absolute;
                     top: 290px;
-                    z-index: 99999;
+                    z-index: 999;
                 }
 
                 .swiper-button-next {
@@ -441,7 +439,7 @@ main {
                     left: 65.5%;
                     font-size: 18px;
                     font-weight: 500;
-                    z-index: 9999;
+                    z-index: 99;
                     border-radius: 30px;
                     padding: 15px;
                 }
@@ -463,8 +461,6 @@ main {
                 .text_slogan {
                     font-family: 'Pretendard';
                     position: absolute;
-                    // top: 25%;
-                    // left: 25%;
                     color: $white;
                     font-size: 146px;
                     font-weight: 800;
@@ -473,13 +469,10 @@ main {
                     flex-direction: column;
                     align-items: center;
                     gap: 20px;
-                    z-index: 999;
                     cursor: pointer;
                 }
 
-                .slide {
-                    position: absolute;
-
+                .breadImage {
                     img {
                         height: 880px;
                     }
@@ -491,7 +484,7 @@ main {
 
 }
 
-
+// ====================================================
 .drinkImage,
 .enjoyImage {
     opacity: 0;
@@ -505,7 +498,10 @@ main {
 
 .sl_eat,
 .sl_drink,
-.sl_enjoy {
+.sl_enjoy,
+.sl_news,
+.sl_magazine,
+.sl_sns {
     opacity: .5;
     transition: opacity 0.5s ease;
 
@@ -516,9 +512,10 @@ main {
     }
 }
 
-
 .br_02,
-.br_03 {
+.br_03,
+.now_02,
+.now_03 {
     opacity: 0;
     transition: opacity 1s ease;
 
