@@ -27,3 +27,17 @@ var swiper = new Swiper(".mySwiper", {
     },
     loop: true,
 });
+
+var swiper = new Swiper(".mySwiper_2", {
+    keyboard: true,
+    effect: "fade",
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+});
