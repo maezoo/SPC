@@ -52,24 +52,25 @@ main {
 
             .title_box {
                 position: absolute;
-                top: 35%;
-                left: 20%;
+                top: 34%;
+                left: 17.5%;
                 z-index: 9999;
                 color: $white;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 25px;
+                gap: 19px;
+                letter-spacing: -2px;
 
                 h1 {
                     font-size: 106px;
-                    font-family: 'Pretendard';
-                    font-weight: 800;
+                    font-weight: 700;
                 }
 
                 h4 {
-                    font-size: 54px;
+                    font-size: 52px;
                     font-weight: 700;
+
                 }
             }
 
@@ -130,20 +131,18 @@ main {
             grid-template-rows: 2fr;
             grid-template-columns: 2fr 2fr;
             gap: 20px;
-            // width: 100%;
-            // height: 880px;
+
 
             .pinkIce {
                 grid-row: 1/2;
                 grid-column: 1/2;
-                // height: 880px;
-                // height: 100%;
-                // display: flex;
-
-                // align-items: center;
-                // justify-content: center;
+                width: 100%;
+                height: 880px;
+                position: relative;
 
                 .text_slogan {
+                    // width: 100%;
+                    // height: 100%;
                     position: absolute;
                     color: $white;
                     font-size: 146px;
@@ -154,16 +153,10 @@ main {
                     justify-content: center;
                     gap: 20px;
                     z-index: 999;
-                    // z-index: 1;
                     cursor: pointer;
                 }
 
                 .slide {
-                    // position: absolute;
-
-                    // overflow: hidden;
-                    // border-radius: 30px;
-
 
                     img {
                         width: 100%;
@@ -176,6 +169,7 @@ main {
 
             .mySwiper {
                 width: 100%;
+                height: 880px;
                 grid-row: 1/2;
                 grid-column: 2/3;
 
@@ -185,7 +179,7 @@ main {
                         display: grid;
                         grid-template-rows: 1fr 1fr;
                         grid-template-columns: 1fr 1fr;
-                        // gap: 20px;
+                        gap: 20px;
 
                         div {
                             border-radius: 35px;
@@ -200,7 +194,6 @@ main {
                                     height: 440px;
                                     object-fit: cover;
                                     border-radius: 35px;
-
                                 }
 
                                 &:hover {
@@ -225,7 +218,6 @@ main {
                             background-color: $white;
                             grid-row: 1/2;
                             grid-columns: 1/2;
-
 
                             .text_brand {
                                 display: flex;
@@ -317,18 +309,12 @@ main {
             gap: 20px;
 
             .mySwiper_2 {
-                // width: 880px;
                 width: 100%;
                 height: 880px;
                 grid-row: 1/2;
                 grid-column: 1/2;
-                // position: relative;
-
 
                 .swiper-wrapper {
-                    // width: 880px;
-                    // height: 880px;
-
                     .swiper-slide {
                         display: grid;
                         grid-template-rows: 1fr 1fr;
