@@ -164,11 +164,6 @@ main {
                         border-radius: 35px;
                     }
                 }
-
-                .drinkImage,
-                .enjoyImage {
-                    opacity: 0;
-                }
             }
 
             .mySwiper {
@@ -511,10 +506,9 @@ main {
                         object-fit: cover;
                     }
 
-                }
-
-                a:hover {
-                    transform: scale(1.1, 1.1);
+                    &:hover {
+                        transform: scale(1.1, 1.1);
+                    }
                 }
             }
         }
@@ -525,41 +519,46 @@ main {
 // ====================================================
 .drinkImage,
 .enjoyImage {
-    opacity: 0;
+    visibility: hidden;
 
     &.show {
-        opacity: 1;
+        visibility: visible;
+
         transition: opacity 0.5s ease-in-out;
         z-index: 1;
     }
 }
 
-.sl_eat,
-.sl_drink,
-.sl_enjoy,
-.sl_news,
-.sl_magazine,
-.sl_sns {
-    opacity: .5;
-    transition: opacity 0.5s ease;
 
-    &.active {
-        opacity: 1;
-        transition: opacity 0.5s ease;
 
-    }
-}
+// }
 
-.br_02,
-.br_03,
-.now_02,
-.now_03 {
-    opacity: 0;
-    transition: opacity 1s ease;
+// .sl_eat,
+// .sl_drink,
+// .sl_enjoy,
+// .sl_news,
+// .sl_magazine,
+// .sl_sns {
+//     opacity: .5;
+//     transition: opacity 0.5s ease;
 
-    &.move {
-        opacity: 1;
-        transition: opacity 1s ease;
-        z-index: 1;
-    }
-}
+//     &.active {
+//         opacity: 1;
+//         transition: opacity 0.5s ease;
+
+//     }
+// }
+
+// .br_02,
+// .br_03,
+// .now_02,
+// .now_03 {
+//     opacity: 0;
+//     transition: opacity 1s ease;
+
+//     &.move {
+//         opacity: 1;
+//         transition: opacity 1s ease;
+//         z-index: 1;
+//     }
+// }
