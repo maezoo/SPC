@@ -7,7 +7,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // position: relative;
     position: sticky;
     z-index: 999;
 
@@ -18,7 +17,6 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // background-color: springgreen;
 
         .logo {
             margin-right: 35px;
@@ -34,110 +32,70 @@ header {
 
 
         .gnb {
+            height: 100%;
+            background-color: saddlebrown;
             display: flex;
-            gap: 45px;
+            gap: 62px;
+
 
             .lnb {
-                height: 105px;
+                // height: 100%;
 
-                a {
-                    // font-size: 24px;
-                }
+                li {
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
 
-                .lnb_list {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+                    .gnb_title {
+                        font-size: 24px;
+                        // height: 105px;
+                        // height: 100%;
+                        display: flex;
+                        align-items: center;
+                    }
 
-                    li {
-                        font-size: 18px;
+
+                    .lnb_list {
+                        position: absolute;
+                        top: 105px;
+                        z-index: 2;
+                        // visibility: hidden;
+
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
+                        // gap: 30px;
+                        background-color: #eefd8b;
+
+                        li {
+                            width: 100%;
+                            font-size: 18px;
+                            font-weight: 700;
+                            // display: flex;
+                            // align-items: center;
+                            // width: 100%;
+                            // height: 100%;
+                            // padding: 5px;
+
+                            a {
+                                // background-color: $light-gray;
+
+                                border-radius: 8px;
+                                height: 30px;
+                                width: 90px;
+
+
+
+                            }
+
+                            &.menuClick {}
+                        }
                     }
                 }
             }
 
         }
-
-        // .gnb {
-        //     display: flex;
-        //     // align-items: center;
-        //     // justify-content: center;
-        //     // position: absolute;
-        //     // left: 500px;
-        //     // background-color: rgb(122, 30, 214);
-        //     // top: 0;
-
-        //     .lnb {
-        //         li {
-        //             display: flex;
-        //             align-items: center;
-
-        //             >a {
-        //                 display: block;
-        //                 // height: 105px;
-        //                 // height: 100%;
-        //                 // width: 100%;
-        //                 // text-align: center;
-        //             }
-        //         }
-
-
-        //         //     line-height: 3.8;
-        //         //     padding: 7px;
-
-
-        //         .lnb_list {
-
-        //             li {
-        //             }
-        //         }
-
-        //         //  
-        //         // }
-
-        //         // li:not(:first-child) {
-        //         // }
-        //     }
-
-        //     .gnb_list {
-
-
-
-        //         // .lnb {
-        //         //     visibility: hidden;
-        //         // background-color: yellowgreen;
-        //         //     font-weight: bold;
-        //         //     display: flex;
-        //         //     flex-direction: column;
-        //         //     // position: relative;
-
-        //         //     li {
-        //         //         width: 120px;
-        //         //         display: flex;
-        //         //         justify-content: center;
-        //         //         // position: absolute;
-        //         //         // z-index: 9999999;
-
-        //         //         // a {
-        //         //         // width: 100%;
-        //         //         //     height: 100%;
-        //         //         //     display: block;
-        //         //         // }
-        //         //     }
-        //         // }
-        //     }
-        // }
-
-
-
-
-
-
-
-
-
-
-
-
 
         .user_actions {
             display: flex;
@@ -223,12 +181,13 @@ header {
 .gnb_bg {
     width: 100%;
     height: 280px;
-    // background-color: $white;
-    background-color: yellow;
+    background-color: $white;
+    // background-color: yellow;
     position: absolute;
+    z-index: 1;
     top: 105px;
     box-shadow: 1px 2px 6px 0 rgba(0, 0, 0, .15);
-    visibility: hidden;
+    // visibility: hidden;
 }
 
 

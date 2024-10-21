@@ -1,32 +1,3 @@
-// // =================
-// // spc_now  ========
-const newsBtn = document.querySelector('.sl_news');
-const magazineBtn = document.querySelector('.sl_magazine');
-const snsBtn = document.querySelector('.sl_sns');
-
-const newsSlide = document.querySelector('.now_01');
-const magazineSlide = document.querySelector('.now_02');
-const snsSlide = document.querySelector('.now_03');
-
-newsBtn.classList.add('active');
-newsSlide.classList.add('move');
-
-function showSlide(slideToShow, btnToActivate) {
-    [newsBtn, magazineBtn, snsBtn].forEach((btn) => {
-        btn.classList.toggle('active', btn === btnToActivate);
-    });
-
-    [newsSlide, magazineSlide, snsSlide].forEach((slide) => {
-        slide.classList.toggle('move', slide === slideToShow);
-    });
-}
-
-newsBtn.addEventListener('click', () => showSlide(newsSlide, newsBtn));
-magazineBtn.addEventListener('click', () => showSlide(magazineSlide, magazineBtn));
-snsBtn.addEventListener('click', () => showSlide(snsSlide, snsBtn));
-
-
-
 
 // // // =================
 // // // brand ===========
@@ -92,6 +63,35 @@ enjoyBtn.addEventListener('click', function () {
     enjoyBtn.classList.add('active');
     enjoySlide.classList.add('move');
 });
+// // =================
+// // spc_now  ========
+const newsBtn = document.querySelector('.sl_news');
+const magazineBtn = document.querySelector('.sl_magazine');
+const snsBtn = document.querySelector('.sl_sns');
+
+const newsSlide = document.querySelector('.now_01');
+const magazineSlide = document.querySelector('.now_02');
+const snsSlide = document.querySelector('.now_03');
+
+newsBtn.classList.add('active');
+newsSlide.classList.add('move');
+
+function showSlide(slideToShow, btnToActivate) {
+    [newsBtn, magazineBtn, snsBtn].forEach((btn) => {
+        btn.classList.toggle('active', btn === btnToActivate);
+    });
+
+    [newsSlide, magazineSlide, snsSlide].forEach((slide) => {
+        slide.classList.toggle('move', slide === slideToShow);
+    });
+}
+
+newsBtn.addEventListener('click', () => showSlide(newsSlide, newsBtn));
+magazineBtn.addEventListener('click', () => showSlide(magazineSlide, magazineBtn));
+snsBtn.addEventListener('click', () => showSlide(snsSlide, snsBtn));
+
+
+
 
 // // // =================
 // // //푸터 패밀리 =========
