@@ -515,22 +515,41 @@ main {
 }
 
 // ====================================================
-.drinkImage,
-.enjoyImage {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-
-    &.show {
-        opacity: 1;
-        z-index: 1;
-
-    }
-}
-
 
 .sl_eat,
 .sl_drink,
-.sl_enjoy,
+.sl_enjoy {
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+
+    &.active {
+        opacity: 1;
+    }
+}
+
+.drinkImage,
+.enjoyImage,
+.br_02,
+.br_03 {
+    opacity: 0;
+    z-index: 0;
+
+    &.show,
+    &.move {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+
+.drinkImage,
+.enjoyImage,
+.br_02,
+.br_03 {
+    transition: opacity 0.5s ease-in-out;
+}
+
+// ====================================================
+
 .sl_news,
 .sl_magazine,
 .sl_sns {
@@ -539,21 +558,18 @@ main {
 
     &.active {
         opacity: 1;
-
     }
 }
 
-
-.br_02,
-.br_03,
+.now_01,
 .now_02,
 .now_03 {
     opacity: 0;
     transition: opacity 1s ease;
+    z-index: 0;
 
     &.move {
         opacity: 1;
-        transition: opacity 1s ease;
         z-index: 1;
     }
 }

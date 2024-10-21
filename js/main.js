@@ -1,4 +1,3 @@
-
 // // =================
 // // spc_now  ========
 const newsBtn = document.querySelector('.sl_news');
@@ -9,45 +8,25 @@ const newsSlide = document.querySelector('.now_01');
 const magazineSlide = document.querySelector('.now_02');
 const snsSlide = document.querySelector('.now_03');
 
-function hideAllTexts() {
-    newsBtn.classList.remove('active');
-    magazineBtn.classList.remove('active');
-    snsBtn.classList.remove('active');
+newsBtn.classList.add('active');
+newsSlide.classList.add('move');
+
+function showSlide(slideToShow, btnToActivate) {
+    [newsBtn, magazineBtn, snsBtn].forEach((btn) => {
+        btn.classList.toggle('active', btn === btnToActivate);
+    });
+
+    [newsSlide, magazineSlide, snsSlide].forEach((slide) => {
+        slide.classList.toggle('move', slide === slideToShow);
+    });
 }
 
-function hideAllSlides() {
-    newsSlide.classList.remove('move');
-    magazineSlide.classList.remove('move');
-    snsSlide.classList.remove('move');
-}
+newsBtn.addEventListener('click', () => showSlide(newsSlide, newsBtn));
+magazineBtn.addEventListener('click', () => showSlide(magazineSlide, magazineBtn));
+snsBtn.addEventListener('click', () => showSlide(snsSlide, snsBtn));
 
 
 
-window.addEventListener('load', function () {
-    newsBtn.classList.add('active');
-    newsSlide.classList.remove('move');
-});
-
-newsBtn.addEventListener('click', function () {
-    hideAllTexts();
-    hideAllSlides();
-    newsBtn.classList.add('active');
-    newsSlide.classList.add('move');
-});
-
-magazineBtn.addEventListener('click', function () {
-    hideAllTexts();
-    hideAllSlides();
-    magazineBtn.classList.add('active');
-    magazineSlide.classList.add('move');
-});
-
-snsBtn.addEventListener('click', function () {
-    hideAllTexts();
-    hideAllSlides();
-    snsBtn.classList.add('active');
-    snsSlide.classList.add('move');
-});
 
 // // // =================
 // // // brand ===========
