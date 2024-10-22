@@ -100,23 +100,23 @@ header {
         .user_actions {
             display: flex;
             gap: 35px;
-            position: relative;
 
             .careers {
                 font-size: 16px;
-                padding: .5rem 1rem;
-                background-color: $gray;
-                border-radius: 15px;
-                border: none;
-
                 width: 95px;
                 height: 31px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                background-color: $gray;
+                border-radius: 15px;
 
-                // line-height: 1.33;
-                // transition: all .5s ease-in-out;
+                a {
+                    display: block;
+                    line-height: 31px;
+                    text-align: center;
+                    // display: inline-block;
+                    // width: 100%;
+                }
+
+
                 &:hover {
                     background-color: $sky;
                     color: $white;
@@ -125,52 +125,51 @@ header {
             }
 
             .global {
-                font-size: 16px;
-                width: 100%;
+                position: relative;
+
 
                 a {
+                    display: block;
 
-                    // position: relative;
-
-                    // 
                     img {
                         width: 35px;
                     }
                 }
 
-
                 ul {
+                    font-size: 16px;
+                    color: $font-gray;
+                    background-color: $white;
+                    // background-color: orange;
+                    border-radius: 0 0 8px 8px;
+                    border: 1px solid rgba(0, 0, 0, 0);
                     position: absolute;
-                    // bottom: 35px;
+                    border-top: none;
+                    // top: 0px;
                     // top: 35px;
-                }
+                    // left: 0px;
+                    // right: 10px;
+                    // bottom: 35px;
+                    bottom: 0px;
+                    // z-index: 9999;
 
-                // // transition: height .5s;
-                // border: 1px solid rgba(0, 0, 0, 0);
-                // border-top: none;
-                // position: absolute;
-                // top: 35px;
-                // z-index: 10;
-                // bottom: 10px;
-
-                ul {
-                    background-color: #eefd8b;
                     // width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
+
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+
+                    // // transition: height .5s;
 
                     li {
-                        // padding: 1.5rem 0;
+                        padding: 15px;
+
                         // visibility: hidden;
                         //     // left: 50%;
                         //     // top: 100%;
                         //     // transform: translateX(-50%);
                         //     // width: 7rem;
                         //     // height: 0;
-
-                        // border-radius: 0 0 .8rem .8rem;
-
                     }
                 }
             }
