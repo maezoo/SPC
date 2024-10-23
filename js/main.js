@@ -1,4 +1,25 @@
 
+
+// // // header_gnb ===========
+// 원본
+// const gnbClicks = document.querySelectorAll('.gnb_title');
+// const lnbLists = document.querySelectorAll('.lnb_list');
+// const gnbBg = document.querySelector('.gnb_bg');
+
+
+// gnbClicks.forEach(gnbClick => {
+//     gnbClick.addEventListener('mouseover', () => {
+//         lnbLists.forEach(lnbList => {
+//             lnbList.classList.add('show');
+//         });
+//         gnbBg.classList.add('show');
+//     });
+// });
+// 원본
+
+// // // =================
+// // // header__user_actions ===========
+
 // // // =================
 // // // brand ===========
 const eatBtn = document.querySelector('.sl_eat');
@@ -106,3 +127,7 @@ function familySite() {
     });
 }
 familySite();
+
+
+
+
