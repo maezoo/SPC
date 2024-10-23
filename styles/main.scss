@@ -12,6 +12,7 @@ main {
             width: 1832px;
             height: 440px;
             position: relative;
+            animation: fade-up .9s ease;
 
             .slick-wrapper {
                 .slide {
@@ -75,6 +76,25 @@ main {
             }
 
         }
+
+        // @keyframes fade-up {
+        //     0% {
+        //         transform: translateY(30%);
+        //     }
+
+        //     100% {
+        //         transform: translateY(0);
+        //     }
+
+        //     from {
+        //         opacity: 0;
+        //     }
+
+        //     to {
+        //         opacity: 1;
+        //     }
+        // }
+
 
         .row2 {
             // width: 100%;
