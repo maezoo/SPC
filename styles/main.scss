@@ -60,21 +60,35 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 19px;
+                gap: 15px;
                 letter-spacing: -2px;
+
+                h4 {
+                    font-size: 52px;
+                    font-weight: 700;
+                }
 
                 h1 {
                     font-size: 106px;
                     font-weight: 700;
                 }
 
-                h4 {
-                    font-size: 52px;
-                    font-weight: 700;
+                [data-aos="fade-down"].aos-animate {
+                    transform: translateY(0px);
+                }
 
+                [data-aos="fade-up"].aos-animate {
+                    transform: translateY(0px);
+                }
+
+                [data-aos="fade-down"] {
+                    transform: translateY(5px);
+                }
+
+                [data-aos="fade-up"] {
+                    transform: translateY(-5px);
                 }
             }
-
         }
 
         @keyframes fade-up {
