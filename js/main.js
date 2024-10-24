@@ -1,4 +1,7 @@
 
+document.querySelectorAll('.text_brand').forEach(slide => {
+    slide.setAttribute('data-aos', 'fade-up');
+});
 // ======================
 // header_gnb ===========
 const gnbClicks = document.querySelectorAll('.gnb_title');
@@ -134,5 +137,6 @@ function familySite() {
 familySite();
 
 
+AOS.init();
 
 
