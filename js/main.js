@@ -1,20 +1,27 @@
-
-
 // // // header_gnb ===========
 // 원본
-// const gnbClicks = document.querySelectorAll('.gnb_title');
-// const lnbLists = document.querySelectorAll('.lnb_list');
-// const gnbBg = document.querySelector('.gnb_bg');
+const gnbClicks = document.querySelectorAll('.gnb_title');
+const lnbLists = document.querySelectorAll('.lnb_list');
+const gnbBg = document.querySelector('.gnb_bg');
+const navArea = document.querySelector('.nav');
 
 
-// gnbClicks.forEach(gnbClick => {
-//     gnbClick.addEventListener('mouseover', () => {
-//         lnbLists.forEach(lnbList => {
-//             lnbList.classList.add('show');
-//         });
-//         gnbBg.classList.add('show');
-//     });
-// });
+gnbClicks.forEach(gnbClick => {
+    gnbClick.addEventListener('mouseover', () => {
+        lnbLists.forEach(lnbList => {
+            lnbList.classList.add('show');
+        });
+        gnbBg.classList.add('show');
+    });
+});
+
+navArea.addEventListener('mouseleave', () => {
+    lnbLists.forEach(lnbList => {
+        lnbList.classList.remove('show');
+    });
+    gnbBg.classList.remove('show');
+});
+
 // 원본
 
 // // // =================
