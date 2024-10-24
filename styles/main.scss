@@ -1,5 +1,8 @@
 @import "./color.scss";
 
+
+//.row2 
+
 main {
     width: 100%;
 
@@ -7,12 +10,13 @@ main {
         padding: 17px 55px 60px 55px;
         display: grid;
         gap: 20px;
+        overflow: hidden;
 
         .happy_slide {
             width: 1832px;
             height: 440px;
             position: relative;
-            animation: fade-up .9s ease;
+            animation: fade-up .7s ease;
 
             .slick-wrapper {
                 .slide {
@@ -62,15 +66,14 @@ main {
                 align-items: center;
                 gap: 15px;
                 letter-spacing: -2px;
+                font-weight: 700;
 
                 h4 {
                     font-size: 52px;
-                    font-weight: 700;
                 }
 
                 h1 {
                     font-size: 106px;
-                    font-weight: 700;
                 }
 
                 [data-aos="fade-down"].aos-animate {
@@ -86,7 +89,7 @@ main {
                 }
 
                 [data-aos="fade-up"] {
-                    transform: translateY(-5px);
+                    transform: translateY(-8px);
                 }
             }
         }
@@ -109,13 +112,12 @@ main {
             }
         }
 
-
         .row2 {
-            // width: 100%;
             display: grid;
             grid-template-columns: 1fr 2fr 1fr;
             grid-template-rows: 1fr;
             gap: 20px;
+            transform: translateX(1000px);
 
             >div {
                 border-radius: 35px;
