@@ -1,5 +1,6 @@
-// // // header_gnb ===========
-// 원본
+
+// ======================
+// header_gnb ===========
 const gnbClicks = document.querySelectorAll('.gnb_title');
 const lnbLists = document.querySelectorAll('.lnb_list');
 const gnbBg = document.querySelector('.gnb_bg');
@@ -21,14 +22,11 @@ navArea.addEventListener('mouseleave', () => {
     });
     gnbBg.classList.remove('show');
 });
+// =================
+// header__user_actions ===========
 
-// 원본
-
-// // // =================
-// // // header__user_actions ===========
-
-// // // =================
-// // // brand ===========
+// =================
+// brand ===========
 const eatBtn = document.querySelector('.sl_eat');
 const drinkBtn = document.querySelector('.sl_drink');
 const enjoyBtn = document.querySelector('.sl_enjoy');
@@ -91,8 +89,8 @@ enjoyBtn.addEventListener('click', function () {
     enjoyBtn.classList.add('active');
     enjoySlide.classList.add('move');
 });
-// // =================
-// // spc_now  ========
+// =================
+// spc_now  ========
 const newsBtn = document.querySelector('.sl_news');
 const magazineBtn = document.querySelector('.sl_magazine');
 const snsBtn = document.querySelector('.sl_sns');
@@ -121,8 +119,8 @@ snsBtn.addEventListener('click', () => showSlide(snsSlide, snsBtn));
 
 
 
-// // // =================
-// // //푸터 패밀리 =========
+// =================
+//푸터 패밀리 =========
 const plusBtn = document.querySelector('.select');
 const selectBox = document.querySelector('.select_wrap');
 const verticalStick = document.querySelector('.ver_rod');
