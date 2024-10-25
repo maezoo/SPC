@@ -388,7 +388,7 @@ main {
                             grid-row: 1/2;
                             grid-columns: 2/3;
 
-                            .text_brand {
+                            .text_brand2 {
                                 display: flex;
                                 flex-direction: column;
                                 align-items: center;
@@ -502,11 +502,16 @@ main {
 
         }
 
+        .career_support-wrapper {
+            overflow: hidden;
+        }
+
         .career_support {
             display: grid;
             grid-template-columns: 2fr 2fr;
             grid-template-rows: 1fr;
             gap: 20px;
+            transform: translate3d(100vw, 0, 0);
 
             .career {
                 grid-row: 1/2;
