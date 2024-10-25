@@ -41,9 +41,18 @@ navArea.addEventListener('mouseleave', () => {
 
 // ===============================
 // header__user_actions ===========
+const globalClick = document.querySelector('.global');
+const langList = document.querySelector('.lang');
+const langKR = document.querySelector('.korean');
 
+globalClick.addEventListener('mouseover', () => {
+    langKR.classList.add('active');
+    langList.classList.add('show');
+});
 
-
+langList.addEventListener('mouseleave', () => {
+    langList.classList.remove('show');
+});
 
 // ======================
 // aos-brand ============
@@ -57,7 +66,6 @@ document.querySelectorAll('.text_brand').forEach(slide => {
         slide.setAttribute('data-aos', 'fade-up');
         slide.setAttribute('data-aos-offset', '-100');
         slide.setAttribute('data-aos-easing', 'linear');
-
     });
 });
 
