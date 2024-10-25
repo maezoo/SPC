@@ -71,19 +71,19 @@ header {
                                 transition: all .5s;
                                 border-radius: 12px;
 
-
                                 a {
                                     display: block;
                                     line-height: 40px;
                                     text-align: center;
                                     width: 100%;
+                                    transition: all .3s linear;
+
                                 }
 
                                 &:hover {
                                     background-color: $light-gray;
                                     border-radius: 12px;
                                     z-index: 999;
-
                                 }
                             }
                         }

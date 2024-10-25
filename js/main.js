@@ -1,43 +1,11 @@
 
-document.querySelectorAll('.text_brand').forEach(slide => {
-    slide.setAttribute('data-aos', 'fade-up');
-    slide.setAttribute('data-aos-easing', 'linear');
-
-});
-
-['.swiper-button-next', '.swiper-button-prev', '.swiper-pagination'].forEach(selector => {
-    document.querySelectorAll(selector).forEach(slide => {
-        slide.setAttribute('data-aos', 'fade-up');
-        slide.setAttribute('data-aos-offset', '-60');
-        slide.setAttribute('data-aos-easing', 'linear');
-
-    });
-});
-
-// ======================
-
-document.querySelectorAll('.text_brand2').forEach(slide => {
-    slide.setAttribute('data-aos', 'fade-up');
-    slide.setAttribute('data-aos-delay', '800');
-    slide.setAttribute('data-aos-easing', 'linear');
-
-});
-
-['.swiper-btn-next', '.swiper-btn-prev', '.pagination_btn'].forEach(selector => {
-    document.querySelectorAll(selector).forEach(slide => {
-        slide.setAttribute('data-aos', 'fade-up');
-        slide.setAttribute('data-aos-offset', '-60');
-        slide.setAttribute('data-aos-delay', '800');
-        slide.setAttribute('data-aos-easing', 'linear');
-    });
-});
 // ======================
 // header_gnb ===========
+const lnbListsClick = document.querySelectorAll('.lnb_list a');
 const gnbClicks = document.querySelectorAll('.gnb_title');
 const lnbLists = document.querySelectorAll('.lnb_list');
 const gnbBg = document.querySelector('.gnb_bg');
 const navArea = document.querySelector('.nav');
-
 
 gnbClicks.forEach(gnbClick => {
     gnbClick.addEventListener('mouseover', () => {
@@ -48,14 +16,67 @@ gnbClicks.forEach(gnbClick => {
     });
 });
 
+lnbListsClick.forEach(lnbList => {
+    lnbList.addEventListener('mouseover', () => {
+        lnbListsClick.forEach(item => {
+            if (item !== lnbList) {
+                item.style.color = '#7a7a7a';
+            }
+        });
+    });
+
+    lnbList.addEventListener('mouseout', () => {
+        lnbListsClick.forEach(item => {
+            item.style.color = '';
+        });
+    });
+});
+
 navArea.addEventListener('mouseleave', () => {
     lnbLists.forEach(lnbList => {
         lnbList.classList.remove('show');
     });
     gnbBg.classList.remove('show');
 });
-// =================
+
+// ===============================
 // header__user_actions ===========
+
+
+
+
+// ======================
+// aos-brand ============
+document.querySelectorAll('.text_brand').forEach(slide => {
+    slide.setAttribute('data-aos', 'fade-up');
+    slide.setAttribute('data-aos-easing', 'linear');
+});
+
+['.swiper-button-next', '.swiper-button-prev', '.swiper-pagination'].forEach(selector => {
+    document.querySelectorAll(selector).forEach(slide => {
+        slide.setAttribute('data-aos', 'fade-up');
+        slide.setAttribute('data-aos-offset', '-100');
+        slide.setAttribute('data-aos-easing', 'linear');
+
+    });
+});
+
+// ======================
+// aos-spc_now ==========
+document.querySelectorAll('.text_brand2').forEach(slide => {
+    slide.setAttribute('data-aos', 'fade-up');
+    slide.setAttribute('data-aos-delay', '600');
+    slide.setAttribute('data-aos-easing', 'linear');
+});
+
+['.swiper-btn-next', '.swiper-btn-prev', '.pagination_btn'].forEach(selector => {
+    document.querySelectorAll(selector).forEach(slide => {
+        slide.setAttribute('data-aos', 'fade-up');
+        slide.setAttribute('data-aos-offset', '-100');
+        slide.setAttribute('data-aos-delay', '600');
+        slide.setAttribute('data-aos-easing', 'linear');
+    });
+});
 
 // =================
 // brand ===========
@@ -147,9 +168,6 @@ function showSlide(slideToShow, btnToActivate) {
 newsBtn.addEventListener('click', () => showSlide(newsSlide, newsBtn));
 magazineBtn.addEventListener('click', () => showSlide(magazineSlide, magazineBtn));
 snsBtn.addEventListener('click', () => showSlide(snsSlide, snsBtn));
-
-
-
 
 // =================
 //푸터 패밀리 =========
