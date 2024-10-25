@@ -1,5 +1,24 @@
 
 // ======================
+// go to top ============
+const goTopBtn = document.querySelector('.go_top');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 1500) {
+        goTopBtn.classList.add('visible');
+    } else {
+        goTopBtn.classList.remove('visible');
+    }
+});
+
+goTopBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+// ======================
 // header_gnb ===========
 const lnbListsClick = document.querySelectorAll('.lnb_list a');
 const gnbClicks = document.querySelectorAll('.gnb_title');
