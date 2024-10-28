@@ -1,5 +1,4 @@
 var swiper = new Swiper(".mySwiper", {
-    // keyboard: true,
     effect: "fade",
     pagination: {
         el: ".swiper-pagination",
@@ -15,7 +14,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper_2 = new Swiper(".mySwiper_2", {
-    // keyboard: true,
     effect: "fade",
     pagination: {
         el: ".pagination_btn",
