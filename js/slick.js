@@ -1,15 +1,27 @@
 
-$(function () {
-    $('.slick-wrapper').slick({
-        arrows: true,
-        dots: false,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-});
+// $(function () {
+//     $('.happy_slide').slick({
+//         arrows: true,
+//         dots: false,
+//         infinite: true,
+//         speed: 500,
+//         fade: true,
+//         cssEase: 'linear',
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//     });
+// });
+// $(function () {
+//     $('.slick-wrapper').slick({
+//         arrows: true,
+//         dots: false,
+//         infinite: true,
+//         speed: 500,
+//         fade: true,
+//         cssEase: 'linear',
+//         autoplay: true,
+//         autoplaySpeed: 2000,
+//     });
+// });
 
 

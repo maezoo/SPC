@@ -1,3 +1,16 @@
+// var happySwiper = new Swiper(".Happy_mySwiper", {
+//     // effect: "fade",
+//     // pagination: {
+//     //     el: ".swiper-pagination",
+//     //     type: "fraction",
+//     // },
+//     navigation: {
+//         nextEl: ".happy_btn_next",
+//         prevEl: ".happy_btn_prev",
+//     },
+//     loop: true,
+// });
+
 var swiper = new Swiper(".mySwiper", {
     effect: "fade",
     pagination: {
