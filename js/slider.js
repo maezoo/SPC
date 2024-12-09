@@ -1,17 +1,21 @@
-// var happySwiper = new Swiper(".Happy_mySwiper", {
-//     // effect: "fade",
-//     // pagination: {
-//     //     el: ".swiper-pagination",
-//     //     type: "fraction",
-//     // },
-//     navigation: {
-//         nextEl: ".happy_btn_next",
-//         prevEl: ".happy_btn_prev",
-//     },
-//     loop: true,
-// });
+var happySwiper = new Swiper(".Happy-swiper", {
+    effect: "fade",
+    pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+    },
+    navigation: {
+        nextEl: ".happy_btn_next",
+        prevEl: ".happy_btn_prev",
+        clickable: true,
+    },
 
-var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: true,
+
+});
+
+var swiper = new Swiper(".brand-swiper", {
     effect: "fade",
     pagination: {
         el: ".swiper-pagination",
