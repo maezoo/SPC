@@ -8,6 +8,7 @@
 @import "./footer.scss";
 @import "./row2.scss";
 @import "./brand.scss";
+@import "./career_support.scss";
 
 
 
@@ -40,11 +41,15 @@ header {
 }
 
 main {
-  padding: 12px 50px 0 40px;
+  padding: 12px 50px 40px 40px;
   // 
 }
 
-footer {}
+footer {
+  padding: 43px 50px 43px 40px;
+  background-color: $light-gray;
+
+}
 
 .box-title {
   color: $white;
@@ -54,7 +59,6 @@ footer {}
   padding: 20px 28px;
   position: absolute;
   z-index: 9;
-
 }
 
 
@@ -64,10 +68,10 @@ footer {}
   background-color: $white;
   border: 1px solid rgba(0, 0, 0, 0.107);
   border-radius: 50%;
-  width: 68px;
-  height: 68px;
-  bottom: 25px;
-  right: 57px;
+  width: 48px;
+  height: 48px;
+  bottom: 20px;
+  right: 35px;
   z-index: 99999;
   position: fixed;
   transform: translateY(140%);
@@ -79,7 +83,7 @@ footer {}
     height: 100%;
     background: url(/images/icon_top.svg) no-repeat 50% 50%;
     transform: rotate(-45deg);
-    background-size: 20px 15px;
+    background-size: 15px 11px;
   }
 }
 
