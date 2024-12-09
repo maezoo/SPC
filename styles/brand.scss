@@ -1,15 +1,14 @@
 .brand {
   width: 100%;
-  // display: flex;
   gap: 14px;
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
+  // background-color: red;
 
   .pinkIce {
     position: relative;
-    // width: 100%;
-    height: 586px;
+    width: 100%;
+    aspect-ratio: 1/1;
 
     .text_slogan {
       font-size: 102px;
@@ -22,29 +21,28 @@
       cursor: pointer;
       position: absolute;
       z-index: 9;
-      // top: 0;
-      // left: 0;
 
       width: 100%;
       height: 100%;
       gap: 15px;
     }
 
-    .slide {
-      // height: 586px;
-      position: absolute;
-      // top: 0;
-      // left: 0;
+    .slide_container {
+      position: relative;
+      height: 100%;
+      width: 100%;
 
-      img {
-        width: 100%;
-        // width: 586px;
-        // object-fit: cover;
-        // width: 906px;
-        // height: 100%;
-        // border-radius: 15px;
+      .slide {
+        position: absolute;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+        }
       }
     }
+
   }
 
   .tab-box {
