@@ -49,109 +49,137 @@
     width: 100%;
     aspect-ratio: 1/1;
 
-
     .brand-swiper {
       position: absolute;
-      width: 100%;
       aspect-ratio: 1/1;
-
-      // height: 100%;
+      width: 100%;
+      height: 100%;
 
       // width: 586px;
       // width: 683px;
 
-      .swiper-wrapper {
-        .swiper-slide {
-          display: grid;
-          grid-template-rows: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
-          gap: 14px;
+      .swiper-slide {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
 
-          >div:nth-child(n+2):nth-child(-n+4) {
-            border-radius: 15px;
-            overflow: hidden;
-            // width: 100%;
-            // height: 100%;
-            // height: 286px;
-            // height: 334px;
+        >div:nth-child(n+2):nth-child(-n+4) {
+          border-radius: 15px;
+          overflow: hidden;
 
-            a {
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition-duration: .5s;
+
+            img {
               width: 100%;
               height: 100%;
-              display: block;
-              transition-duration: .5s;
+              border-radius: 15px;
+              object-fit: cover;
+            }
 
-              img {
-                width: 100%;
-                height: 100%;
-                border-radius: 15px;
-                object-fit: cover;
-              }
+            &:hover {
+              transform: scale(1.1, 1.1);
+            }
+          }
+        }
 
-              &:hover {
-                transform: scale(1.1, 1.1);
-              }
+        .pagination_box {
+          grid-row: 1/2;
+          grid-columns: 1/2;
+          background-color: $white;
+          border-radius: 15px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+
+          .text_brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+
+            h3 {
+              font-family: 'Pretendard', sans-serif;
+              font-size: 35px;
+              font-weight: 800;
+            }
+
+            P {
+              color: $font-gray;
+              font-size: 14px;
+              font-weight: 500;
             }
           }
 
-          div:nth-child(2) {
-            grid-row: 1/2;
-            grid-columns: 2/3;
-          }
+          .pagination {
+            background: $light-gray;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 115px;
+            height: 33px;
 
-          div:nth-child(3) {
-            grid-row: 2/3;
-            grid-columns: 1/2;
+            img {
+              width: 15px;
+            }
           }
+        }
 
-          div:nth-child(4) {
-            grid-row: 2/3;
-            grid-columns: 2/3;
-          }
+        div:nth-child(2) {
+          grid-row: 1/2;
+          grid-columns: 2/3;
+        }
+
+        div:nth-child(3) {
+          grid-row: 2/3;
+          grid-columns: 1/2;
+        }
+
+        div:nth-child(4) {
+          grid-row: 2/3;
+          grid-columns: 2/3;
         }
       }
     }
-
-    .swiper-slide {
-      opacity: 0;
-      visibility: hidden;
-    }
-
-    .swiper-slide.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    // ================================
-    // ================================
-    .swiper-button-next,
-    .swiper-button-prev {
-      position: absolute;
-      width: 15px;
-      z-index: 999;
-      // top: 205px;
-      top: 35%;
-    }
-
-    .swiper-button-next {
-      background: url(/images/slide_next.svg) no-repeat;
-      background-size: contain;
-      // left: 163px;
-      left: 27.5%;
-    }
-
-    .swiper-button-prev {
-      background: url(/images/slide_prev.svg) no-repeat;
-      background-size: contain;
-      // left: 104px;
-      right: 27.5%;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      display: none;
-    }
   }
+
+
+  .swiper-slide {
+    // opacity: 0;
+    // visibility: hidden;
+  }
+
+  .swiper-slide.active {
+    // opacity: 1;
+    // visibility: visible;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // // =======================================
 
   // 원본
   // .tab-box {
@@ -264,53 +292,51 @@
   // }
 }
 
+// .pagination_box {
+//   grid-row: 1/2;
+//   grid-columns: 1/2;
+//   // background-color: $white;
+//   background-color: orange;
+//   border-radius: 15px;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 30px;
 
-// =======================================
-.pagination_box {
-  grid-row: 1/2;
-  grid-columns: 1/2;
-  // background-color: $white;
-  background-color: orange;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+//   .text_brand {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     gap: 4px;
 
-  .text_brand {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+//     h3 {
+//       font-family: 'Pretendard', sans-serif;
+//       font-size: 35px;
+//       font-weight: 800;
+//     }
 
-    h3 {
-      font-family: 'Pretendard', sans-serif;
-      font-size: 35px;
-      font-weight: 800;
-    }
+//     P {
+//       color: $font-gray;
+//       font-size: 14px;
+//       font-weight: 500;
+//     }
+//   }
+// }
 
-    P {
-      color: $font-gray;
-      font-size: 14px;
-      font-weight: 500;
-    }
-  }
-}
+// .pagination {
+//   background: $light-gray;
+//   border-radius: 20px;
+//   font-size: 13px;
+//   font-weight: 500;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 115px;
+//   height: 33px;
 
-.pagination {
-  background: $light-gray;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 115px;
-  height: 33px;
-
-  img {
-    width: 15px;
-  }
-}
+//   img {
+//     width: 15px;
+//   }
+// }
