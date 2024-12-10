@@ -3,7 +3,6 @@
   gap: 14px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  // background-color: red;
 
   .pinkIce {
     position: relative;
@@ -21,7 +20,6 @@
       cursor: pointer;
       position: absolute;
       z-index: 9;
-
       width: 100%;
       height: 100%;
       gap: 15px;
@@ -42,19 +40,11 @@
         }
       }
     }
-
-  }
-
-  .tab-box {
-    // position: relative;
-    // width: 50%;
   }
 
   .brand-swiper {
     position: absolute;
     width: 586px;
-    // grid-row: 1/2;
-    // grid-column: 2/3;
 
     .swiper-wrapper {
 
@@ -66,18 +56,20 @@
 
         div {
           height: 286px;
-          height: 292px;
           border-radius: 15px;
           overflow: hidden;
 
           a {
+            width: 100%;
+            height: 100%;
             display: block;
             transition-duration: .5s;
 
             img {
               width: 100%;
-              object-fit: cover;
+              height: 100%;
               border-radius: 15px;
+              object-fit: cover;
             }
 
             &:hover {
@@ -86,20 +78,8 @@
           }
         }
 
-        // :not(div:nth-child(1)) {
-        //   p {
-        //     color: $white;
-        //     font-size: 34px;
-        //     font-weight: 700;
-        //     padding: 30px 40px;
-        //     position: absolute;
-        //     z-index: 9;
-        //   }
-        // }
-
         .pagination_box {
-          // background-color: $white;
-          background-color: rgba(208, 40, 40, 0.5);
+          background-color: $white;
           grid-row: 1/2;
           grid-columns: 1/2;
 
@@ -109,7 +89,6 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
-            // padding-top: 130px;
             padding-bottom: 70px;
 
             h3 {
@@ -155,40 +134,31 @@
     position: absolute;
     z-index: 99;
     top: 174px;
-    left: 80px;
+    left: 86px;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
     top: 205px;
-    width: 14px;
-    height: 14px;
+    width: 15px;
     z-index: 999;
   }
 
   .swiper-button-next {
     background: url(/images/slide_next.svg) no-repeat;
     background-size: contain;
-    // left: 256px;
-    // right: 0;
-    left: 160px;
-
-
+    left: 163px;
   }
 
   .swiper-button-prev {
     background: url(/images/slide_prev.svg) no-repeat;
     background-size: contain;
-    // right: 0px;
-    left: 100px;
+    left: 104px;
   }
 
   .swiper-button-next:after,
   .swiper-button-prev:after {
     display: none;
   }
-
-
-
 }

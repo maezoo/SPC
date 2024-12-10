@@ -83,7 +83,7 @@ document.querySelectorAll('.text_brand').forEach(slide => {
 ['.swiper-button-next', '.swiper-button-prev', '.swiper-pagination'].forEach(selector => {
     document.querySelectorAll(selector).forEach(slide => {
         slide.setAttribute('data-aos', 'fade-up');
-        slide.setAttribute('data-aos-offset', '-100');
+        slide.setAttribute('data-aos-offset', '-50');
         slide.setAttribute('data-aos-easing', 'linear');
     });
 });
