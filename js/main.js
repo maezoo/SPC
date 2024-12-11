@@ -75,37 +75,26 @@ langList.addEventListener('mouseleave', () => {
 
 // ======================
 // aos-brand ============
-// document.querySelectorAll('.text_brand', '.pagination').forEach(slide => {
+// document.querySelectorAll('.txtBrand', '.pagination').forEach(slide => {
 //     slide.setAttribute('data-aos', 'fade-up');
 //     slide.setAttribute('data-aos-easing', 'linear');
 // });
-document.querySelectorAll('.text_brand, .pagination').forEach(slide => {
+document.querySelectorAll('.textBrand-1, .pagination').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-easing', 'linear');
     slide.setAttribute('data-aos-offset', '-50');
 
 });
-// ['.text_brand', '.pagination'].forEach(selector => {
+// ['.txtBrand', '.pagination'].forEach(selector => {
 //     document.querySelectorAll(selector).forEach(slide => {
 //         slide.setAttribute('data-aos', 'fade-up');
 //         slide.setAttribute('data-aos-offset', '-50');
 //         slide.setAttribute('data-aos-easing', 'linear');
 //     });
-
-
-
-// ['.swiper-button-next', '.swiper-button-prev', '.swiper-pagination'].forEach(selector => {
-//     document.querySelectorAll(selector).forEach(slide => {
-//         slide.setAttribute('data-aos', 'fade-up');
-//         slide.setAttribute('data-aos-offset', '-50');
-//         slide.setAttribute('data-aos-easing', 'linear');
-//     });
-// });
-
 
 // ======================
 // aos-spc_now ==========
-document.querySelectorAll('.text_brand2').forEach(slide => {
+document.querySelectorAll('.textBrand-2').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-delay', '600');
     slide.setAttribute('data-aos-easing', 'linear');

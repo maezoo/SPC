@@ -15,26 +15,23 @@ var happySwiper = new Swiper(".Happy-swiper", {
 });
 // ================================================
 
-var swiper = new Swiper(".brand-swiper", {
+var brandSwiper = new Swiper(".brand-swiper", {
     effect: "fade",
     navigation: {
-        nextEl: '.tab-next',
-        prevEl: '.tab-prev',
+        nextEl: '.tab-next-1',
+        prevEl: '.tab-prev-1',
         clickable: true,
     },
     loop: true,
 });
 
 // ================================================
-var swiper_2 = new Swiper(".mySwiper_2", {
+var nowSwiper = new Swiper(".now-swiper", {
     effect: "fade",
-    pagination: {
-        el: ".pagination_btn",
-        type: "fraction",
-    },
     navigation: {
-        nextEl: ".swiper-btn-next",
-        prevEl: ".swiper-btn-prev",
+        nextEl: '.tab-next-2',
+        prevEl: '.tab-prev-2',
+        clickable: true,
     },
     loop: true,
 });
