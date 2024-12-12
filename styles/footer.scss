@@ -1,5 +1,11 @@
 @import "./color.scss";
 
+footer {
+  padding: 43px 50px 43px 40px;
+  background-color: $light-gray;
+
+}
+
 .footer-wrap {
   width: 100%;
   display: flex;
