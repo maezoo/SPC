@@ -75,41 +75,22 @@ langList.addEventListener('mouseleave', () => {
 
 // ======================
 // aos-brand ============
-// document.querySelectorAll('.txtBrand', '.pagination').forEach(slide => {
-//     slide.setAttribute('data-aos', 'fade-up');
-//     slide.setAttribute('data-aos-easing', 'linear');
 
-// document.querySelectorAll('.textBrand-1', '.pageBtn-1').forEach(slide => {
-//     slide.setAttribute('data-aos', 'fade-up');
-//     slide.setAttribute('data-aos-easing', 'linear');
-//     slide.setAttribute('data-aos-offset', '-50');
-// });
-
-
-// ['.txtBrand', '.pagination'].forEach(selector => {
-//     document.querySelectorAll(selector).forEach(slide => {
-//         slide.setAttribute('data-aos', 'fade-up');
-//         slide.setAttribute('data-aos-offset', '-50');
-//         slide.setAttribute('data-aos-easing', 'linear');
-//     });
+document.querySelectorAll('.textBrand-1, .pageBtn-1').forEach(slide => {
+    slide.setAttribute('data-aos', 'fade-up');
+    slide.setAttribute('data-aos-easing', 'linear');
+    slide.setAttribute('data-aos-offset', '-50');
+    slide.setAttribute('data-aos-delay', '600');
+});
 
 // ======================
 // aos-spc_now ==========
-
-document.querySelectorAll('.textBrand-2').forEach(slide => {
+document.querySelectorAll('.textBrand-2, .pageBtn-2').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
-    slide.setAttribute('data-aos-delay', '600'); // 동일한 지연 시간 설정
     slide.setAttribute('data-aos-easing', 'linear');
-});
-
-
-document.querySelectorAll('.pageBtn-2').forEach(slide => {
-    slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-offset', '-50');
     slide.setAttribute('data-aos-delay', '600');
-    slide.setAttribute('data-aos-easing', 'linear');
 });
-
 
 // =================
 // brand ===========
