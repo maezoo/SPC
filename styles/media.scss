@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 34px 30px 0 20px;
+    padding: 34px 30px 40px 20px;
 
     // common-main ==================================
     .pagination_box {
@@ -185,6 +185,147 @@
     }
   }
 
-  .footer-wrap {}
+
+  // ====================== 
+  // footer ===============
+  footer {
+    padding: 40px 15px;
+    position: relative;
+  }
+
+  .footer-wrap {
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-top {
+
+    .info-1 {
+      display: flex;
+      gap: 40px;
+    }
+
+    .info-2 {
+      .address {
+        display: block;
+      }
+
+      .privacy {
+        font-weight: 500;
+        row-gap: 15px;
+        margin-top: 20px;
+      }
+    }
+
+    .footer_menu {
+      display: none;
+    }
+  }
+
+  .footer-bottm {
+    display: flex;
+    flex-direction: column;
+
+    .family {
+      .fam_box {
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        display: flex;
+        gap: 10px;
+
+        p {
+          font-size: 14px;
+        }
+
+        .select {
+          width: 35px;
+          height: 35px;
+
+          .hori_rod {
+            width: 14px;
+            height: 1px;
+            top: 49%;
+            left: 30%;
+          }
+
+          .ver_rod {
+            width: 1px;
+            height: 14px;
+            top: 31%;
+            left: 48%;
+          }
+
+          .select_wrap {
+            bottom: 40px;
+            width: 157px;
+            height: 130px;
+            right: 0px;
+
+            .scrollBar {
+              color: black;
+              height: 93px;
+              width: 150px;
+
+              li {
+                font-size: 12px;
+                font-weight: 400;
+                padding: 9px 0 10px 17px;
+              }
+            }
+
+            .scrollBar::-webkit-scrollbar {
+              width: 2px;
+            }
+
+            .scrollBar::-webkit-scrollbar-thumb {
+              height: 25px;
+            }
+          }
+        }
+      }
+
+      .copy {
+        margin-bottom: 38px;
+      }
+    }
+
+    .sns_icon {
+      display: flex;
+      justify-content: flex-start;
+      gap: 15px;
+
+      li:nth-child(-n+3) {
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+
+
+  .go_top {
+    background-color: $white;
+    border: 1px solid rgba(0, 0, 0, 0.107);
+    border-radius: 50%;
+    width: 48px;
+    width: 48px;
+    height: 48px;
+    bottom: 20px;
+    right: 35px;
+    z-index: 99999;
+    position: fixed;
+    transform: translateY(140%);
+    transition: transform 0.3s ease;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(/images/icon_top.svg) no-repeat 50% 50%;
+      transform: rotate(-45deg);
+      background-size: 15px 11px;
+    }
+  }
 
 }
