@@ -1,0 +1,25 @@
+@media (max-width: 640px) {
+
+  body {
+    overflow-y: hidden;
+  }
+
+  header {
+    height: 56px;
+    padding: 0 30px 0 30px;
+
+    .header-inner {
+      .mobile-btn {
+        display: block;
+      }
+
+      .nav-wrapper {
+        display: none;
+      }
+    }
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}

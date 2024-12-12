@@ -76,11 +76,16 @@ langList.addEventListener('mouseleave', () => {
 // ======================
 // aos-brand ============
 
-document.querySelectorAll('.textBrand-1, .pageBtn-1').forEach(slide => {
+document.querySelectorAll('.textBrand-1').forEach(slide => {
+    slide.setAttribute('data-aos', 'fade-up');
+    slide.setAttribute('data-aos-delay', '-50');
+    slide.setAttribute('data-aos-easing', 'linear');
+});
+
+document.querySelectorAll('.pageBtn-1').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-easing', 'linear');
     slide.setAttribute('data-aos-offset', '-50');
-    slide.setAttribute('data-aos-delay', '600');
 });
 
 // ======================
