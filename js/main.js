@@ -1,3 +1,16 @@
+// ======================
+// mobile-menu ==========
+const mobileBtn = document.querySelector('.mobile-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+mobileBtn.addEventListener('click', function () {
+    mobileMenu.classList.toggle('show');
+    if (mobileMenu.classList.contains('show')) {
+        document.body.style.overflowY = 'hidden';
+    } else {
+        document.body.style.overflowY = 'auto';
+    }
+});
 
 // ======================
 // go to top ============
@@ -18,6 +31,7 @@ goTopBtn.addEventListener('click', function (e) {
         behavior: 'smooth'
     });
 });
+
 // ======================
 // header_gnb ===========
 const lnbListsClick = document.querySelectorAll('.lnb_list a');
@@ -73,9 +87,24 @@ langList.addEventListener('mouseleave', () => {
     langList.classList.remove('show');
 });
 
+// =====================================
+// 반응형일 때 Aos 속성 제거 ================
+document.querySelectorAll('.spc_now, .career_support').forEach(element => {
+    if (window.innerWidth <= 1024) {
+        element.removeAttribute('data-aos');
+    } else {
+        // 다시 data-aos 속성 설정 (필요에 따라 설정)
+        if (element.classList.contains('spc_now')) {
+            element.setAttribute('data-aos', 'fade-up');
+        }
+        if (element.classList.contains('career_support')) {
+            element.setAttribute('data-aos', 'fade-left');
+        }
+    }
+});
+
 // ======================
 // aos-brand ============
-
 document.querySelectorAll('.textBrand-1').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-delay', '-50');
@@ -94,8 +123,24 @@ document.querySelectorAll('.textBrand-2, .pageBtn-2').forEach(slide => {
     slide.setAttribute('data-aos', 'fade-up');
     slide.setAttribute('data-aos-easing', 'linear');
     slide.setAttribute('data-aos-offset', '-50');
-    slide.setAttribute('data-aos-delay', '600');
+    slide.setAttribute('data-aos-delay', '500');
 });
+
+const updateAOSDelay = () => {
+    document.querySelectorAll('.textBrand-2, .pageBtn-2').forEach(slide => {
+        slide.setAttribute('data-aos', 'fade-up');
+        slide.setAttribute('data-aos-easing', 'linear');
+        slide.setAttribute('data-aos-offset', '-50');
+        if (window.innerWidth <= 1024) {
+            slide.setAttribute('data-aos-delay', '300');
+        } else {
+            slide.setAttribute('data-aos-delay', '500');
+        }
+    });
+};
+
+window.addEventListener('load', updateAOSDelay);
+window.addEventListener('resize', updateAOSDelay);
 
 // =================
 // brand ===========
@@ -161,6 +206,7 @@ enjoyBtn.addEventListener('click', function () {
     enjoyBtn.classList.add('active');
     enjoySlide.classList.add('move');
 });
+
 // =================
 // spc_now  ========
 const newsBtn = document.querySelector('.sl_news');
