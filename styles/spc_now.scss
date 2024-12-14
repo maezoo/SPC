@@ -10,10 +10,14 @@
     aspect-ratio: 1/1;
 
     .now-swiper {
+      // position: absolute;
+      // aspect-ratio: 1/1;
+      // width: 100%;
+      // height: 100%;
       position: absolute;
-      aspect-ratio: 1/1;
       width: 100%;
-      height: 100%;
+      // aspect-ratio: 1/1;
+      // height: 100%;
 
       .swiper-slide {
         display: grid;
