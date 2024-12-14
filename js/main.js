@@ -89,11 +89,13 @@ langList.addEventListener('mouseleave', () => {
 
 // =====================================
 // 반응형일 때 Aos 속성 제거 ================
-document.querySelectorAll('.spc_now, .career_support').forEach(element => {
+document.querySelectorAll('.row2, .spc_now, .career_support').forEach(element => {
     if (window.innerWidth <= 1024) {
         element.removeAttribute('data-aos');
     } else {
-        // 다시 data-aos 속성 설정 (필요에 따라 설정)
+        if (element.classList.contains('row2')) {
+            element.setAttribute('data-aos', 'fade-left');
+        }
         if (element.classList.contains('spc_now')) {
             element.setAttribute('data-aos', 'fade-up');
         }

@@ -35,15 +35,14 @@
     .brand-swiper {
       position: absolute;
       width: 100%;
-      // aspect-ratio: 1/1;
       // height: 100%;
+      // aspect-ratio: 1/1;
 
       .swiper-slide {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 14px;
-        aspect-ratio: 1/1;
 
 
         >div:nth-child(n+2):nth-child(-n+4) {
@@ -57,6 +56,7 @@
             transition-duration: .5s;
 
             img {
+              aspect-ratio: 1/1;
               width: 100%;
               height: 100%;
               border-radius: 15px;
