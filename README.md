@@ -1,6 +1,6 @@
-# SPC
+![프로필 이미지](./public/images/screenshot1.png)
 
-![프로필 이미지](./public/images/brand001_1.webp)
+# SPC
 
 ## Skills
 
